@@ -1,0 +1,17 @@
+// Image:
+// .img--logo
+// .img--frame
+// .img--avatar
+
+
+.img {
+  &--logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+
+  &--avatar {
+    @include center-align;
+    padding: 25px 0;
+  }
+}

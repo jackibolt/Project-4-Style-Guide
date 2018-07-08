@@ -1,0 +1,21 @@
+// the universal selector (*)
+// ul elements
+// p elements
+
+* {
+  font-family: $stack-sans-serif;
+  color: $grey;
+  font-weight: $font-light;
+  // @include center-align();
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+}

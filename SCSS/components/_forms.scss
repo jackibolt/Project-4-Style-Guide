@@ -1,0 +1,25 @@
+// Forms:
+// .form
+// .form__label--hidden
+// .form__input
+
+.form {
+  text-align: left;
+  @include flex($dir: column);
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  @extend %btn-shape;
+  @include center-align(90%);
+  text-align: left;
+  font-size: em_px(.8);
+  font-weight: $font-bold;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  border-bottom: $primary-teal 5px solid;
+}

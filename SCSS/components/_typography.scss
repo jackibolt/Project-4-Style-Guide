@@ -1,0 +1,35 @@
+// Typography:
+// .container
+// .link
+// .blockquote
+// .headline--primary
+// .headline--secondary
+
+.headline--secondary {
+  text-align: left;
+  margin-top: 70px;
+}
+
+.headline--primary {
+  font-weight: $font-bold;
+  color: $primary-teal;
+  width: 80%;
+}
+
+.link {
+  font-weight: $font-bold;
+  color: $secondary-aqua;
+  text-decoration: none;
+}
+
+.blockquote {
+  @include inset-block(85%);
+  font-size: em_px(1.5);
+  font-style: italic;
+  text-align: left;
+  border-left: $primary-teal 7px solid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}

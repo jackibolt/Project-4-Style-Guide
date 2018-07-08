@@ -1,0 +1,36 @@
+
+// Center Align @mixin center-align
+
+@mixin center-align($w:null) {
+  width: $w;
+  text-align: center;
+  margin: auto;
+}
+
+@mixin inset-block($w:null) {
+  width: $w;
+  margin: auto;
+}
+
+// Media Query @mixin mediaQ
+@mixin mediaQ ($break) {
+  @if $break == 'small' {
+    @media (max-width: $brk-narrow) {
+      @content;
+    }
+  }
+
+  @else if $break == 'wide' {
+    @media (min-width: $brk-wide){
+      @content;
+    }
+  }
+}
+
+// Flex @mixin flex
+@mixin flex ($disp: flex, $dir: null, $wrap: null, $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}

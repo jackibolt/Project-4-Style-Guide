@@ -1,0 +1,31 @@
+// Font Stacks
+
+$stack-sans-serif : 'Lato', sans-serif;
+// $font-test: 'Shrikhand', cursive;
+
+// Font Weights
+$font-light: 100;
+$font-medium: 400;
+$font-bold: 800;
+
+// Media Queries
+
+$brk-narrow: (768px);
+$brk-wide: (769px);
+
+// Colors
+$primary-teal: #22d8ae;
+$secondary-aqua: #22dff7;
+$green: #39D267;
+$red: #E47765;
+$orange: #E56E24;
+$purple: #B285CD;
+$teal-light: lighten($primary-teal, 19%);
+$aqua-dark: darken($secondary-aqua, 25%);
+$purple-light: #dfb1f9;
+$green-light: lighten($green, 18%);
+$red-light: lighten($red, 10%);
+$orange-light: lighten($orange, 13%);
+
+$white: #fff;
+$grey: #76777C;

@@ -1,0 +1,15 @@
+// Buttons:
+// .btn--default
+// .btn--success
+// .btn--error
+// .btn--warning
+// .btn--info
+// .theme__colors
+
+.btn--default {
+  @extend %btn-shape;
+  background-color: $secondary-aqua;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+}
