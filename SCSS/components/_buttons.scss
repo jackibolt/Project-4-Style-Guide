@@ -6,10 +6,19 @@
 // .btn--info
 // .theme__colors
 
-.btn--default {
-  @extend %btn-shape;
-  background-color: $secondary-aqua;
-  color: $white;
-  text-transform: uppercase;
-  font-weight: $font-bold;
+.btn {
+  @include inset-block(95%);
+
+  @each $btn in $btns {
+    &--#{$btn} {
+    @extend %btn-shape;
+    @extend %btn-text;
+    }
+  }
+
+  @each $btn, $color in $btn-colors {
+    &--#{$btn} {
+      background: $color;
+    }
+  }
 }

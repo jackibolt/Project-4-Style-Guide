@@ -1,21 +1,21 @@
 
-// Center Align @mixin center-align
-
+// Center Text-Align
 @mixin center-align($w:null) {
   width: $w;
   text-align: center;
   margin: auto;
 }
 
+// Center Block-Align
 @mixin inset-block($w:null) {
   width: $w;
   margin: auto;
 }
 
-// Media Query @mixin mediaQ
+// Media Query
 @mixin mediaQ ($break) {
   @if $break == 'small' {
-    @media (max-width: $brk-narrow) {
+    @media (min-width: $brk-narrow) {
       @content;
     }
   }
@@ -27,10 +27,19 @@
   }
 }
 
-// Flex @mixin flex
+// Flex
 @mixin flex ($disp: flex, $dir: null, $wrap: null, $just: null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
 }
+
+// Box Colors
+// @mixin box-backgrounds {
+//   @each $box, $color in $box-colors {
+//     .grid__col--#{$box} {
+//       background: $color;
+//     }
+//   }
+// }

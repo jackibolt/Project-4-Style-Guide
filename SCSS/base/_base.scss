@@ -5,8 +5,7 @@
 * {
   font-family: $stack-sans-serif;
   color: $grey;
-  font-weight: $font-light;
-  // @include center-align();
+  font-weight: $font-medium;
   box-sizing: border-box;
 }
 
@@ -17,5 +16,5 @@ ul {
 p {
   text-align: left;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 25px;
 }

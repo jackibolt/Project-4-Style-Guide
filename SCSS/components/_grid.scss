@@ -21,6 +21,18 @@
 
 .grid__row {
   @include mediaQ('wide') {
-  @include flex();
+    @include flex();
   }
 }
+
+@for $i from 1 through $box-count {
+  .grid__col--#{$i} {
+    @extend %box-style;
+    @extend %box-text;
+  }
+}
+
+// 
+// .theme__colors {
+//   @include box-backgrounds;
+// }

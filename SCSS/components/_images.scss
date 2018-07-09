@@ -5,6 +5,7 @@
 
 
 .img {
+
   &--logo {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -13,5 +14,11 @@
   &--avatar {
     @include center-align;
     padding: 25px 0;
+  }
+
+  &--frame {
+    border: $grey-light .5px solid;
+    padding: 10px;
+    @include inset-block(100%);
   }
 }

@@ -5,12 +5,12 @@ $stack-sans-serif : 'Lato', sans-serif;
 
 // Font Weights
 $font-light: 100;
-$font-medium: 400;
+$font-medium: 300;
 $font-bold: 800;
 
 // Media Queries
 
-$brk-narrow: (768px);
+$brk-narrow: (1px);
 $brk-wide: (769px);
 
 // Colors
@@ -29,3 +29,43 @@ $orange-light: lighten($orange, 13%);
 
 $white: #fff;
 $grey: #76777C;
+$grey-light: lighten($grey, 35%);
+
+// Button map
+$btns : (
+"default",
+"success",
+"error",
+"warning",
+"info",
+);
+
+// Button Colors
+$btn-colors: (
+default : $secondary-aqua,
+success : $green,
+error : $red,
+warning : $orange,
+info : $purple,
+);
+
+// Box Colors
+$box-colors: (
+1: $primary-teal,
+2:  $secondary-aqua,
+3:  $purple-light,
+4:  $secondary-aqua,
+5:  $green-light,
+6:  $aqua-dark,
+7:  $red-light,
+8:  $orange-light,
+9:  $grey,
+10:  $grey,
+11:  $grey,
+12:  $teal-light,
+);
+
+// Grid Variables
+$box-count: 12;
+// $box-width: ;
+// $box-gutter: ;
