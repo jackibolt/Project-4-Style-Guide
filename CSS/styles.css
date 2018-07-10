@@ -32,7 +32,6 @@
 .grid__col--12.theme__colors, .grid__col--11.theme__colors, .grid__col--10.theme__colors, .grid__col--9.theme__colors, .grid__col--8.theme__colors, .grid__col--7.theme__colors, .grid__col--6.theme__colors, .grid__col--5.theme__colors, .grid__col--4.theme__colors, .grid__col--3.theme__colors, .grid__col--2.theme__colors, .grid__col--1.theme__colors {
   font-weight: 800;
   padding-left: 10px;
-  font-size: em_px(0.8);
 }
 
 .btn--default {
@@ -214,10 +213,10 @@
   margin: auto;
 }
 
-nav {
+.grid__col--9 {
   margin: auto;
 }
-nav ul {
+.grid__col--9 ul {
   padding-left: 0;
   padding-right: 0;
   width: 95%;
@@ -225,12 +224,11 @@ nav ul {
   margin: auto;
 }
 @media (min-width: 769px) {
-  nav ul {
+  .grid__col--9 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
-    margin-top: 50px;
   }
 }
 

@@ -2,7 +2,7 @@
 // .nav__item
 
 
-nav {
+.grid__col--9 {
   @include inset-block;
   ul {
     padding-left: 0;
@@ -11,7 +11,6 @@ nav {
     @include mediaQ('wide'){
       @include flex($dir: row, $just: space-between);
       width: 60%;
-      margin-top: 50px;
     }
 
   }
