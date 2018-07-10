@@ -36,10 +36,12 @@
 }
 
 // Box Colors
-// @mixin box-backgrounds {
-//   @each $box, $color in $box-colors {
-//     .grid__col--#{$box} {
-//       background: $color;
-//     }
-//   }
-// }
+@mixin box-colors {
+    @each $color in $box-colors {
+        $index: index($box-colors, $color);
+
+        &--#{$index}.theme__colors {
+            background-color: $color;
+        }
+    }
+}

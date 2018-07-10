@@ -7,12 +7,12 @@
 // .theme__colors
 
 .btn {
-  @include inset-block(95%);
 
   @each $btn in $btns {
     &--#{$btn} {
-    @extend %btn-shape;
-    @extend %btn-text;
+      @extend %btn-shape;
+      @extend %btn-text;
+      @extend %btn-gutter;
     }
   }
 

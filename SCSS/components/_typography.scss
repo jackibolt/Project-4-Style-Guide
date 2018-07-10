@@ -5,6 +5,14 @@
 // .headline--primary
 // .headline--secondary
 
+.grid__col--8 {
+  .card {
+    @include mediaQ('wide') {
+      width: 85%;
+    }
+  }
+}
+
 .headline--secondary {
   text-align: left;
   margin-top: 50px;
@@ -19,7 +27,7 @@
 
 .link {
   font-weight: $font-bold;
-  color: $secondary-aqua;
+  color: $s-aqua;
   text-decoration: none;
 }
 
@@ -31,6 +39,5 @@
   border-left: $primary-teal 7px solid;
   border-radius: 5px;
   margin-top: 20px;
-  // margin-bottom: 20px;
   padding-left: 15px;
 }

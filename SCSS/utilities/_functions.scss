@@ -1,5 +1,9 @@
 // Font font-size
 
 @function em_px($ems: null) {
-    @return ($ems * 16) * 1px;
+  @return ($ems * 16) * 1px;
+}
+
+@function pct($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
 }

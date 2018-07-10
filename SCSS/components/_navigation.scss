@@ -2,22 +2,18 @@
 // .nav__item
 
 
-
-// .container:first-child {
-//   @include mediaQ('wide'){
-//     @include flex($just: space-between);
-//   }
-//   margin-bottom: 100px;
-// }
-
 nav {
+  @include inset-block;
   ul {
     padding-left: 0;
+    padding-right: 0;
     @include center-align(95%);
     @include mediaQ('wide'){
-      @include flex($just: space-around);
-      width: 55%;
+      @include flex($dir: row, $just: space-between);
+      width: 60%;
+      margin-top: 50px;
     }
+
   }
 }
 
@@ -25,7 +21,7 @@ nav {
   @extend %btn-shape;
   a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: em_px(1);
   }
   &:first-child {
     background-color: $primary-teal;

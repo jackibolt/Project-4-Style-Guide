@@ -3,10 +3,15 @@
 %btn-shape {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 15px 10px 15px;
   border-radius: 5px;
   border: none;
   width: 100%;
+}
+
+%btn-gutter {
+  margin-left: $box-gutter;
+  margin-right: $box-gutter;
 }
 
 %btn-text {
@@ -16,19 +21,18 @@
 }
 
 %box-style {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  height: 45px;
   padding: 15px 0;
   border-radius: 5px;
-  border: $orange 1px solid;
-  width: 100%;
+  border: none;
   &:last-of-type {
     margin-bottom: 50px;
   }
 }
 
 %box-text {
-  font-size: em_px(.8);
   font-weight: $font-bold;
-  // padding-left: 10px;
-  // text-align: left;
+  padding-left: 10px;
+  font-size: em_px(.8);
 }

@@ -15,17 +15,18 @@ $brk-wide: (769px);
 
 // Colors
 $primary-teal: #22d8ae;
-$secondary-aqua: #22dff7;
+$s-aqua: #66edff;
 $green: #39D267;
 $red: #E47765;
 $orange: #E56E24;
 $purple: #B285CD;
 $teal-light: lighten($primary-teal, 19%);
-$aqua-dark: darken($secondary-aqua, 25%);
+$aqua-dark: darken($s-aqua, 25%);
 $purple-light: #dfb1f9;
 $green-light: lighten($green, 18%);
 $red-light: lighten($red, 10%);
 $orange-light: lighten($orange, 13%);
+$s-aqua-light: #7ff0ff;
 
 $white: #fff;
 $grey: #76777C;
@@ -42,7 +43,7 @@ $btns : (
 
 // Button Colors
 $btn-colors: (
-default : $secondary-aqua,
+default : $s-aqua,
 success : $green,
 error : $red,
 warning : $orange,
@@ -51,21 +52,22 @@ info : $purple,
 
 // Box Colors
 $box-colors: (
-1: $primary-teal,
-2:  $secondary-aqua,
-3:  $purple-light,
-4:  $secondary-aqua,
-5:  $green-light,
-6:  $aqua-dark,
-7:  $red-light,
-8:  $orange-light,
-9:  $grey,
-10:  $grey,
-11:  $grey,
-12:  $teal-light,
+  $primary-teal,
+  $s-aqua,
+  $purple-light,
+  $s-aqua-light,
+  $green-light,
+  $aqua-dark,
+  $red-light,
+  $orange-light,
+  $grey,
+  $grey,
+  $grey,
+  $teal-light,
 );
 
 // Grid Variables
 $box-count: 12;
-// $box-width: ;
-// $box-gutter: ;
+$max-width: 1190px;
+$box-width: 65px;
+$box-gutter: 8px;

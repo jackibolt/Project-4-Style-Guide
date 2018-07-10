@@ -4,8 +4,10 @@
 // .form__input
 
 .form {
-  text-align: left;
   @include flex($dir: column);
+  @include mediaQ('wide') {
+    margin-left: 30px;
+  }
 }
 
 .form__label--hidden {

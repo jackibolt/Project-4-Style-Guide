@@ -16,23 +16,51 @@
 // .theme__colors
 
 .container {
-  @include center-align(85%);
+  @include inset-block(85%);
+  @include mediaQ("wide") {
+    @include inset-block(75%);
+  }
 }
 
 .grid__row {
   @include mediaQ('wide') {
-    @include flex();
+    @include flex($dir:row, $just: space-between);
+    .centered {
+      display: block;
+      @include inset-block;
+    }
+    // .grid__col--6 {
+    //   .img {
+    //   @include center-align(45%);
+    //   }
+    // }
   }
 }
 
+
 @for $i from 1 through $box-count {
-  .grid__col--#{$i} {
+  .grid__col--#{$i}.theme__colors{
     @extend %box-style;
+    @extend %btn-gutter;
     @extend %box-text;
   }
 }
 
-// 
-// .theme__colors {
-//   @include box-backgrounds;
-// }
+@include mediaQ('wide') {
+  @for $i from 1 through $box-count {
+    $boxes: $i;
+    .grid__col--#{$i} {
+      width: pct($boxes, $box-count);
+    }
+  }
+}
+
+.grid__col {
+  @include box-colors;
+  &--12 {
+    width: 100%;
+    @include mediaQ('wide') {
+      @include flex($dir: row, $just: space-around);
+    }
+  }
+}

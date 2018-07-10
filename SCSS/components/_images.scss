@@ -14,6 +14,7 @@
   &--avatar {
     @include center-align;
     padding: 25px 0;
+    display: block;
   }
 
   &--frame {
